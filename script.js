@@ -8,7 +8,13 @@ function display(num){
 
 function equal(){
     try{
-        output.value = eval(output.value);
+        if(output.value === "30121999"){
+            document.body.innerHTML = `<div class="hid">
+               <h1 style="font-size: 200px; color: aliceblue;"> Love u Sonia 💕 </h1>
+            </div>`;
+        }
+        else{
+        output.value = eval(output.value);}
     }catch(err){
         output.value = "INVALID";
         
